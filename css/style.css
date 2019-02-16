@@ -142,6 +142,10 @@
     margin-left: 10px;
 }
 
+.page-message {
+    margin-top: 20px;
+}
+
 .link-box {
     display: flex;
     justify-content: space-between;
