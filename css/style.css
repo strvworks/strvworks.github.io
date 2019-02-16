@@ -29,6 +29,7 @@
     .icon-circle {
         width: 70vw;
         height: 70vw;
+        margin-bottom: 30px;
     }
     #move-text {
         font-size: 5vw;
