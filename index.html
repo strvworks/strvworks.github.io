@@ -4,17 +4,59 @@
     <meta charset="UTF-8">
     <title>strvworks</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
     <div id="main">
-        <div id="icon-circle">
+        <div class="info-box font-style">
+            <div class="title">strvworks</div>
+            <div class="contents-box">
+                Links
+                <div class="contacts-content">
+                    <div class="contacts-box">
+                        <span class="contacts-item"><i class="fab fa-twitter-square"></i> Twitter</span>
+                        <span class="contacts-item"><i class="fab fa-github-square"></i> GitHub</span>
+                    </div>
+                    <div class="contacts-box">
+                        <span class="contacts-item"><i class="fab fa-facebook-square"></i> Facebook</span>
+                        <span class="contacts-item"><i class="fab fa-github-square"></i> GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="icon-circle">
             <img id="main-icon" @click="icon_click" src="images/icon.png"/>
+            <div id="move-text" class="font-style">
+                <span>{{move_text}}</span>
+            </div>
+        </div>
+        <div class="info-box font-style">
+            <div class="contents-box">
+                Contacts
+                <div class="contacts-content">
+                    <div class="contacts-box">
+                        <span class="contacts-item"><i class="fab fa-twitter-square"></i> Twitter</span>
+                        <span class="contacts-item"><i class="fab fa-github-square"></i> GitHub</span>
+                    </div>
+                    <div class="contacts-box">
+                        <span class="contacts-item"><i class="fab fa-facebook-square"></i> Facebook</span>
+                    </div>
+                </div>
+            </div>
+            <div class="links">
+                Links
+                <div class="links-content">
+                    <div><span><i class="fab fa-twitter-square"></i> Twitter</span> <span><i class="fab fa-github-square"></i> GitHub</span></div>
+                    <div><span><i class="fab fa-twitter-square"></i> Twitter</span> <span><i class="fab fa-github-square"></i> GitHub</span></div>
+                </div>
+            </div>
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="https://unpkg.com/ityped@1.0.3"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
