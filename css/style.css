@@ -1,6 +1,3 @@
-#main-content {
-}
-
 @media screen and (min-width:480px) {
     .icon-circle {
         width: 85vw;
@@ -9,8 +6,43 @@
     #move-text {
         font-size: 5vw;
     }
+    .contents-box {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .info-box {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .title {
+        text-align: center;
+    }
+}
+@media screen and (min-width:800px) {
+    .icon-circle {
+        width: 70vw;
+        height: 70vw;
+    }
+    #move-text {
+        font-size: 5vw;
+    }
+    .contents-box {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .info-box {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .title {
+        text-align: center;
+    }
 }
 @media screen and (min-width:1024px) {
+    #main {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
     .icon-circle {
         width: 60vw;
         height: 60vw;
@@ -18,15 +50,36 @@
     #move-text {
         font-size: 3vw;
     }
+    .info-box {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contents-box {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 @media screen and (min-width:1600px) {
+    #main {
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
     .icon-circle {
         width: 40vw;
         height: 40vw;
     }
     #move-text {
         font-size: 3vw;
+    }
+
+    .info-box {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contents-box {
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
@@ -45,13 +98,8 @@
     height: 82%;
 }
 
-#console-message {
-}
-
 .info-box {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 .title {
@@ -59,6 +107,7 @@
 }
 
 .contents-box {
+    display: flex;
     font-size: 30px;
     margin-top: 15px;
     margin-bottom: 20px;
