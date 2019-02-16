@@ -7,14 +7,21 @@
         font-size: 5vw;
     }
     .contents-box {
+        font-size: 60px;
         flex-direction: row;
         justify-content: center;
+    }
+    .font-small {
+        font-size: 50px;
     }
     .info-box {
         flex-direction: column;
         justify-content: center;
     }
     .title {
+        text-align: center;
+    }
+    .page-message {
         text-align: center;
     }
 }
@@ -27,14 +34,21 @@
         font-size: 5vw;
     }
     .contents-box {
+        font-size: 50px;
         flex-direction: row;
         justify-content: center;
+    }
+    .font-small {
+        font-size: 40px;
     }
     .info-box {
         flex-direction: column;
         justify-content: center;
     }
     .title {
+        text-align: center;
+    }
+    .page-message {
         text-align: center;
     }
 }
@@ -50,11 +64,15 @@
     #move-text {
         font-size: 3vw;
     }
-    .info-box {
+    .contents-box {
+        font-size: 45px;
         flex-direction: row;
         justify-content: space-between;
     }
-    .contents-box {
+    .font-small {
+        font-size: 35px;
+    }
+    .info-box {
         flex-direction: row;
         justify-content: space-between;
     }
@@ -72,12 +90,15 @@
     #move-text {
         font-size: 3vw;
     }
-
-    .info-box {
+    .contents-box {
+        font-size: 40px;
         flex-direction: row;
         justify-content: space-between;
     }
-    .contents-box {
+    .font-small {
+        font-size: 30px;
+    }
+    .info-box {
         flex-direction: row;
         justify-content: space-between;
     }
@@ -108,23 +129,22 @@
 
 .contents-box {
     display: flex;
-    font-size: 30px;
     margin-top: 15px;
     margin-bottom: 20px;
 }
 
-.contacts-content {
-    font-size: 20px;
+.link-content {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.contents-box-item {
     margin-left: 10px;
 }
 
-.contacts-box {
+.link-box {
     display: flex;
     justify-content: space-between;
-}
-
-.contacts-item {
-    margin-left: 10px;
 }
 
 .font-style {
