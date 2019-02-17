@@ -1,4 +1,4 @@
-@media screen and (min-width:480px) {
+@media screen and (min-width:0px) {
     .icon-circle {
         width: 85vw;
         height: 85vw;
@@ -7,12 +7,12 @@
         font-size: 5vw;
     }
     .contents-box {
-        font-size: 60px;
+        font-size: 6.5vw;
         flex-direction: row;
         justify-content: center;
     }
     .font-small {
-        font-size: 50px;
+        font-size: 6vw;
     }
     .info-box {
         flex-direction: column;
@@ -141,6 +141,7 @@
 
 .contents-box-item {
     margin-left: 10px;
+    white-space: nowrap;
 }
 
 .page-message {
