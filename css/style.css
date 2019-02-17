@@ -118,6 +118,7 @@
 #main-icon {
     width: 82%;
     height: 82%;
+    cursor: pointer;
 }
 
 .info-box {
@@ -142,6 +143,7 @@
 .contents-box-item {
     margin-left: 10px;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .page-message {

@@ -15,18 +15,17 @@
                 <div>Pages</div>
                 <div class="link-content">
                     <div class="link-box">
-                        <span class="contents-box-item font-small"><i class="fas fa-pager"></i> works</span>
-                        <span class="contents-box-item font-small"><i class="fas fa-user-alt"></i> profile</span>
+                        <span @mouseenter="cursor_enter" @mouseleave="cursor_leave" class="contents-box-item font-small"><i class="fas fa-pager"></i> works</span>
+                        <span @mouseenter="cursor_enter" @mouseleave="cursor_leave" class="contents-box-item font-small"><i class="fas fa-user-alt"></i> profile</span>
                     </div>
                     <div class="link-box">
-                        <span class="contents-box-item font-small"><i class="fas fa-pen"></i> blog</span>
-                        <span class="contents-box-item font-small"></span>
+                        <span @mouseenter="cursor_enter" @mouseleave="cursor_leave" class="contents-box-item font-small"><i class="fas fa-pen"></i> blog</span>
                     </div>
                 </div>
             </div>
         </div>
         <div class="icon-circle">
-            <img id="main-icon" @click="icon_click" src="images/icon.png"/>
+            <img id="main-icon" @click="icon_click" @mouseenter="cursor_enter" @mouseleave="cursor_leave" src="images/icon.png"/>
             <div id="move-text" class="font-style">
                 <span>{{move_text}}</span>
             </div>
@@ -36,12 +35,11 @@
                 <div>Links</div>
                 <div class="link-content">
                     <div class="link-box">
-                        <span class="contents-box-item font-small"><i class="fab fa-twitter-square"></i> Twitter</span>
-                        <span class="contents-box-item font-small"><i class="fab fa-github-square"></i> GitHub</span>
+                        <span @mouseenter="cursor_enter" @mouseleave="cursor_leave" @click="open_url('https://twitter.com/strvert')" class="contents-box-item font-small"><i class="fab fa-twitter-square"></i> Twitter</span>
+                        <span @mouseenter="cursor_enter" @mouseleave="cursor_leave" @click="open_url('https://github.com/strvworks')" class="contents-box-item font-small"><i class="fab fa-github-square"></i> GitHub</span>
                     </div>
                     <div class="link-box">
-                        <span class="contents-box-item font-small"><i class="fab fa-facebook-square"></i> Facebook</span>
-                        <span class="contents-box-item font-small"></span>
+                        <span @mouseenter="cursor_enter" @mouseleave="cursor_leave" @click="open_url('https://www.facebook.com/strvert')" class="contents-box-item font-small"><i class="fab fa-facebook-square"></i> Facebook</span>
                     </div>
                 </div>
             </div>

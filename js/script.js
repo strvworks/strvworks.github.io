@@ -115,6 +115,28 @@ var app = new Vue({
                 ],
             });
         },
+        cursor_enter: function(event) {
+            anime({
+                targets: event.target,
+                scale: [
+                    {value: 1.05, duration: 100, delay: 0},
+                ],
+                easing: 'linear',
+            });
+        },
+        cursor_leave: function(event) {
+            anime({
+                targets: event.target,
+                scale: [
+                    {value: 1.00, duration: 100, delay: 0},
+                ],
+                easing: 'linear',
+            });
+        },
+        open_url: function (url) {
+            console.log(url);
+            window.open(url);
+        }
     }
 });
 
