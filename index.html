@@ -19,17 +19,22 @@
                         <span @mouseenter="cursor_enter" @mouseleave="cursor_leave" class="contents-box-item font-small"><i class="fas fa-user-alt"></i> profile</span>
                     </div>
                     <div class="link-box">
-                        <span @mouseenter="cursor_enter" @mouseleave="cursor_leave" class="contents-box-item font-small"><i class="fas fa-pen"></i> blog</span>
+                        <span @mouseenter="cursor_enter" @mouseleave="cursor_leave" @click="open_url('http://strv13570.hateblo.jp/')" class="contents-box-item font-small"><i class="fas fa-pen"></i> blog</span>
+                        <span @mouseenter="cursor_enter" @mouseleave="cursor_leave" @click="open_url('https://qiita.com/strv13570')" class="contents-box-item font-small"><i class="fas fa-cogs"></i> Qiita</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="icon-circle">
-            <img id="main-icon" @click="icon_click" @mouseenter="cursor_enter" @mouseleave="cursor_leave" src="images/icon.png"/>
-            <div id="move-text" class="font-style">
-                <span>{{move_text}}</span>
+        <main id="barba-wra[[er">
+            <div class="barba-container">
+                <div class="icon-circle">
+                    <img id="main-icon" @click="icon_click" @mouseenter="cursor_enter" @mouseleave="cursor_leave" src="images/icon.png"/>
+                    <div id="move-text" class="font-style">
+                        <span>{{move_text}}</span>
+                    </div>
+                </div>
             </div>
-        </div>
+        </main>
         <div class="info-box font-style">
             <div class="contents-box">
                 <div>Links</div>
@@ -47,8 +52,9 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
     <script src="https://unpkg.com/ityped@1.0.3"></script>
     <script src="js/script.js"></script>
 </body>
