@@ -25,7 +25,7 @@
         justify-content: center;
     }
     .font-small {
-        font-size: 6vw;
+        font-size: 5vw;
     }
     .info-box {
         flex-direction: column;
@@ -90,6 +90,20 @@
         flex-direction: row;
         justify-content: space-between;
     }
+    article {
+        margin-top: 100px;
+    }
+    header {
+        background-color: #ffffff;
+    }
+    .header-1 {
+        position: fixed;
+    }
+    .header-2 {
+        position: fixed;
+        top: 10px;
+        right: 10vw;
+    }
 }
 
 a {
@@ -99,9 +113,6 @@ a {
 
 footer {
     margin-top: 50px;
-}
-
-main {
 }
 
 .main-content-move {

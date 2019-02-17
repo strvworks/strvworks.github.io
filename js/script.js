@@ -146,7 +146,7 @@ var app = new Vue({
                 return;
             }
             let tl = anime.timeline({
-                targets: 'main'
+                targets: 'article'
             });
             tl.add({
                 scale: {
