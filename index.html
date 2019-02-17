@@ -14,20 +14,20 @@
             <div class="contents-box header-2">
                 <div class="link-content">
                     <nav class="link-box">
-                        <span @mouseenter="cursor_enter" @mouseleave="cursor_leave" @click="open_url('/pages/profile.html', false)" class="contents-box-item font-small"><i class="fas fa-pager"></i> works</span>
-                        <span @mouseenter="cursor_enter" @mouseleave="cursor_leave" @click="change_page('profile')" class="contents-box-item font-small"><i class="fas fa-user-alt"></i> profile</span>
-                        <span @mouseenter="cursor_enter" @mouseleave="cursor_leave" @click="open_url('http://strv13570.hateblo.jp/')" class="contents-box-item font-small"><i class="fas fa-pen"></i> blog</span>
+                        <span @mouseenter="cursor_enter" @mouseleave="cursor_leave" @click="change_page('work')" class="contents-box-item font-small"><i class="fas fa-pager"></i> Work</span>
+                        <span @mouseenter="cursor_enter" @mouseleave="cursor_leave" @click="change_page('profile')" class="contents-box-item font-small"><i class="fas fa-user-alt"></i> Profile</span>
+                        <span @mouseenter="cursor_enter" @mouseleave="cursor_leave" @click="open_url('http://strv13570.hateblo.jp/')" class="contents-box-item font-small"><i class="fas fa-pen"></i> Blog</span>
                         <span @mouseenter="cursor_enter" @mouseleave="cursor_leave" @click="open_url('https://qiita.com/strv13570')" class="contents-box-item font-small"><i class="fas fa-cogs"></i> Qiita</span>
                     </nav>
                 </div>
             </div>
         </header>
-        <article>
+        <article class="font-style">
             <template v-if="page_state == 'home'">
                 <div id="home">
                     <figure class="icon-circle">
                         <img id="main-icon" @click="icon_click" @mouseenter="cursor_enter" @mouseleave="cursor_leave" src="images/icon.png"/>
-                        <div id="move-text" class="font-style">
+                        <div id="move-text">
                             <span>{{move_text}}</span>
                         </div>
                     </figure>
@@ -35,11 +35,36 @@
             </template>
 
             <template v-if="page_state == 'profile'">
-                <div id="profile">
-                    <article id="profile-main">
-                       TEST TEST
-                    </article>
-                </div>
+                <section class="section">
+                    <h1 class="subsection">ABOUT</h1>
+                    <div id="profile-main" >
+                        <dl>
+                            <dt>Name: </dt>
+                            <dd>ISHIKAWA RIKU</dd>
+                        </dl>
+                        <dl>
+                            <dt>HN: </dt>
+                            <dd>STONRIVER</dd>
+                        </dl>
+                        <dl>
+                            <dt>AGE: </dt>
+                            <dd>18</dd>
+                        </dl>
+                        <dl>
+                            <dt>GENDER: </dt>
+                            <dd>MAN</dd>
+                        </dl>
+                    </div>
+                </section>
+            </template>
+
+            <template v-if="page_state == 'work'">
+                <section class="section">
+                    <h1 class="subsection">ただいま</h1>
+                    <div id="work-main">
+                        <img src="images/kouzi.jpg" height="1024" width="421"/>
+                    </div>
+                </section>
             </template>
         </article>
         <footer class="info-box font-style">

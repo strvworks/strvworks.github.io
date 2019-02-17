@@ -142,9 +142,8 @@ var app = new Vue({
             }
         },
         change_page: function (state) {
-            if (state === app.page_state) {
-                return;
-            }
+            if (state === app.page_state) return;
+
             let tl = anime.timeline({
                 targets: 'article'
             });
