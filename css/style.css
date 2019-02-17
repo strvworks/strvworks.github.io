@@ -75,8 +75,18 @@
     .page-message {
         text-align: center;
     }
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        background-color: #ffffff;
+        opacity: 0.8;
+        z-index: 1000;
+    }
     article {
-        margin-top: 60px;
+        margin-top: 200px;
     }
 }
 @media screen and (min-width:1024px) {
@@ -230,10 +240,10 @@ footer {
         width: 10%;
     }
     dd {
-        margin-left: 200px;
+        margin-left: 250px;
     }
     #profile-main {
-        font-size: 30px;
+        font-size: 40px;
     }
     dt {
         padding-bottom: 5px;
