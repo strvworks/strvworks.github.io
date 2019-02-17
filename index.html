@@ -9,14 +9,14 @@
 </head>
 <body>
     <div id="main">
-        <div class="info-box font-style">
-            <div class="title">strvworks</div>
-            <div class="contents-box">
+        <header class="info-box font-style">
+            <div @click="change_page('home')" class="title header-1">strvworks</div>
+            <div class="contents-box header-2">
                 <div>Pages</div>
                 <div class="link-content">
                     <div class="link-box">
-                        <span @mouseenter="cursor_enter" @mouseleave="cursor_leave" class="contents-box-item font-small"><i class="fas fa-pager"></i> works</span>
-                        <span @mouseenter="cursor_enter" @mouseleave="cursor_leave" class="contents-box-item font-small"><i class="fas fa-user-alt"></i> profile</span>
+                        <span @mouseenter="cursor_enter" @mouseleave="cursor_leave" @click="open_url('/pages/profile.html', false)" class="contents-box-item font-small"><i class="fas fa-pager"></i> works</span>
+                        <span @mouseenter="cursor_enter" @mouseleave="cursor_leave" @click="change_page('profile')" class="contents-box-item font-small"><i class="fas fa-user-alt"></i> profile</span>
                     </div>
                     <div class="link-box">
                         <span @mouseenter="cursor_enter" @mouseleave="cursor_leave" @click="open_url('http://strv13570.hateblo.jp/')" class="contents-box-item font-small"><i class="fas fa-pen"></i> blog</span>
@@ -24,20 +24,30 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <main id="barba-wra[[er">
-            <div class="barba-container">
-                <div class="icon-circle">
-                    <img id="main-icon" @click="icon_click" @mouseenter="cursor_enter" @mouseleave="cursor_leave" src="images/icon.png"/>
-                    <div id="move-text" class="font-style">
-                        <span>{{move_text}}</span>
+        </header>
+        <main>
+                <template v-if="page_state == 'home'">
+                    <div id="home">
+                        <div class="icon-circle">
+                            <img id="main-icon" @click="icon_click" @mouseenter="cursor_enter" @mouseleave="cursor_leave" src="images/icon.png"/>
+                            <div id="move-text" class="font-style">
+                                <span>{{move_text}}</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
+                </template>
+
+                <template v-if="page_state == 'profile'">
+                    <div id="profile">
+                        <div id="profile-main">
+                            TEST TEST TEST
+                        </div>
+                    </div>
+                </template>
         </main>
-        <div class="info-box font-style">
-            <div class="contents-box">
-                <div>Links</div>
+        <footer class="info-box font-style">
+            <div class="contents-box footer-1">
+                <div>SNS</div>
                 <div class="link-content">
                     <div class="link-box">
                         <span @mouseenter="cursor_enter" @mouseleave="cursor_leave" @click="open_url('https://twitter.com/strvert')" class="contents-box-item font-small"><i class="fab fa-twitter-square"></i> Twitter</span>
@@ -48,14 +58,13 @@
                     </div>
                 </div>
             </div>
-            <div class="contents-box-item font-small page-message"><span>This page is hosted</span><br><span>by GitHub Pages.</span></div>
-        </div>
-    </div>
+            <div class="contents-box-item font-small page-message footer-2"><span>This page is hosted</span><br><span>by GitHub Pages.</span></div>
+        </footer>
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
-    <script src="https://unpkg.com/ityped@1.0.3"></script>
-    <script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+<script src="https://unpkg.com/ityped@1.0.3"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

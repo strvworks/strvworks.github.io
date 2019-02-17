@@ -1,22 +1,22 @@
 var app = new Vue({
     el: '#main',
     data: {
-        message: "test",
         easings: ['easeInQuad',	'easeOutQuad', 'easeInOutQuad',
             'easeInBack','easeOutBack','linear'],
         move_text: "My name is stonriver.",
         messages: ['My name is stonriver.', 'My favorite editor is Vim.', 'I like ArchLinux.', 'I love information technology.',
             "I'm 18 years old.",  "I'm a student engineer."],
-        message_counter: 0
+        message_counter: 0,
+        page_state: 'home'
     },
     methods: {
         icon_click: function () {
             let rand = getRandomInt(5);
-            let e = this.easings[getRandomInt(this.easings.length)];
-            this.message_counter = (this.message_counter + 1) >= this.messages.length ? 0 : this.message_counter+1;
-            this.move_text = this.messages[this.message_counter];
+            let e = app.easings[getRandomInt(app.easings.length)];
+            app.message_counter = (app.message_counter + 1) >= app.messages.length ? 0 : app.message_counter+1;
+            app.move_text = app.messages[app.message_counter];
             console.log(e);
-            console.log(this.move_text);
+            console.log(app.move_text);
 
             var callBacks = null;
             switch (rand) {
@@ -133,13 +133,52 @@ var app = new Vue({
                 easing: 'linear',
             });
         },
-        open_url: function (url) {
+        open_url: function (url, newWindow=true) {
             console.log(url);
-            window.open(url);
-        }
+            if(newWindow) {
+                window.open(url);
+            } else {
+                location.href = url;
+            }
+        },
+        change_page: function (state) {
+            if (state === app.page_state) {
+                return;
+            }
+            let tl = anime.timeline({
+                targets: 'main'
+            });
+            tl.add({
+                scale: {
+                    value: 0,
+                    duration: 800,
+                },
+                begin: function () {
+                    anime({
+                        targets: 'footer',
+                        opacity: 0
+                    });
+                },
+                complete: function () {
+                    app.page_state = state;
+                }
+            }).add({
+                scale: {
+                    value: 1,
+                    duration: 800,
+                },
+                complete: function () {
+                    anime({
+                        targets: 'footer',
+                        opacity: 1
+                    });
+                }
+            })
+        },
     }
 });
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
 }
+
