@@ -20,8 +20,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="460">
-                  <caret line="83" column="39" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
+                <state relative-caret-position="230">
+                  <caret line="58" column="105" selection-start-line="58" selection-start-column="105" selection-end-line="58" selection-end-column="105" />
                 </state>
               </provider>
             </entry>
@@ -33,8 +33,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="184">
-                  <caret line="259" column="6" lean-forward="true" selection-start-line="259" selection-start-column="6" selection-end-line="259" selection-end-column="6" />
+                <state relative-caret-position="552">
+                  <caret line="260" column="19" lean-forward="true" selection-start-line="260" selection-start-column="19" selection-end-line="260" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -190,12 +190,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550306731861</updated>
-      <workItem from="1550306733419" duration="65928000" />
+      <workItem from="1550306733419" duration="66625000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65928000" />
+    <option name="totallyTimeSpent" value="66625000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="-7" width="2575" height="1415" extended-state="6" />
@@ -254,15 +254,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="259" column="6" lean-forward="true" selection-start-line="259" selection-start-column="6" selection-end-line="259" selection-end-column="6" />
+        <state relative-caret-position="552">
+          <caret line="260" column="19" lean-forward="true" selection-start-line="260" selection-start-column="19" selection-end-line="260" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="83" column="39" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
+        <state relative-caret-position="230">
+          <caret line="58" column="105" selection-start-line="58" selection-start-column="105" selection-end-line="58" selection-end-column="105" />
         </state>
       </provider>
     </entry>
