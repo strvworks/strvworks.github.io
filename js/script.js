@@ -5,7 +5,7 @@ var app = new Vue({
             'easeInBack','easeOutBack','linear'],
         move_text: "My name is stonriver.",
         messages: ['My name is stonriver.', 'My favorite editor is Vim.', 'I like ArchLinux.', 'I love information technology.',
-            "I'm 18 years old.",  "I'm a student engineer."],
+            "I'm 19 years old.",  "I'm a student engineer.", "My hobby is game development."],
         message_counter: 0,
         page_state: 'home'
     },
